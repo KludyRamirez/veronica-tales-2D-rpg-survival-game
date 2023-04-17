@@ -14,6 +14,9 @@ GameObject:
   - component: {fileID: 1272567528594232134}
   - component: {fileID: 3285982773319924692}
   - component: {fileID: 992359592184426872}
+  - component: {fileID: 4274963937388982025}
+  - component: {fileID: 8322638868766309861}
+  - component: {fileID: 4374411375032516692}
   m_Layer: 0
   m_Name: Slime
   m_TagString: Untagged
@@ -35,7 +38,7 @@ Transform:
   m_Children:
   - {fileID: 7443781532720766190}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &834176089125294459
 SpriteRenderer:
@@ -176,6 +179,47 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 2
+--- !u!114 &4274963937388982025
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4140919131299157881}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea04c5ef39fff82469ed9e79dd9d8f6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingHealth: 3
+  deathVFXPrefab: {fileID: 3921849420448013586, guid: 19ab29a12467e6945ab37caa496439f1, type: 3}
+--- !u!114 &8322638868766309861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4140919131299157881}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6499986c4b0096c4ba24ccc4b23555e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  knockBackTime: 0.2
+--- !u!114 &4374411375032516692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4140919131299157881}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79a0a157a0d657a408a88d0aaaec7e79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  whiteFlastMat: {fileID: 2100000, guid: 1354c4078839ffb45bb46e8ad52d648b, type: 2}
+  restoreDefaultMattime: 0.1
 --- !u!1 &5773947575101933575
 GameObject:
   m_ObjectHideFlags: 0
